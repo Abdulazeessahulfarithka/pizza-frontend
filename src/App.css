@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.App{
+  max-width:2000px;
+  margin:0px auto;
+  background:rgb(239, 164, 25)
+}
+.application-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+padding:10px 20px;
+border-bottom:3px solid black;
+}
+.application-header>.branding{
+display: flex;
+}
+.application-header>.branding>img{
+  width: 50px;
+}
+.application-header>.branding>p{
+  font-size:large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container
+{
+  display:flex;
+  width: 100%;
+  height:calc(100vh-100px);
 }
+.app-container>.menu-navigation-container{
+  width:20%;
+  height:100%;
+  background:grey;
+  justify-content:center;
+  align-items:center
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.app-container>.main-container{
+  width:60%;
+  height:100%;
+  background:blue;
+  align-items:center;
+  padding:15px;
+  box-sizing:border-box;
+
+}
+.app-container>.cart-container{
+  width:30%;
+  height:100%;
+  background:yellow
+
+}
+.menu-navigation-container{
+  padding: 0 10px;
+  box-sizing:border-box
+  
+}
+.menu-navigation-container> nav> ul>{
+  padding:none;
+list-style-type:none;
+}
+.menu-item{
+ width:100px;
+ height:50px;
+ border-radius:30px;
+ background:goldenrod;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ margin-bottom:10px;
+ cursor:pointer;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .menu-item:hover{
+background-color:azure;
   }
-  to {
-    transform: rotate(360deg);
+  .resturant-card{
+    width:95%;
+    height:120px;
+    padding: 20px;
+    background:white;
+    border-radius:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:1px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
   }
-}
+  .resturant-card>.resturant-logo{
+    width:100px;
+    height:100%;
+    background:pink;
+    border-radius:5px;
+
+  }
+
+  .resturant-card>.resturant-details{
+    padding:10px;
+    width:calc(100%-170px);
+   
+  }
+  .resturant-card>.resturant-details>.name-row{
+    display:flex;
+    align-items:center;
+  }
+
+  .resturant-card>.resturant-gocta{
+    width:50px;
+    height:50px;
+    border-radius:20px;
+    background:rgba(15,20,25,0.1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+
+  }
