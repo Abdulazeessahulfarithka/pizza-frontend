@@ -10,7 +10,7 @@ function ResturantCard({data={},handleClick=(e)=>{}}) {
        <h5 >{data.area?data.area:"resturant area"}</h5>
        <h6>{data.contactNumber?data.contactNumber:"contact number"}</h6>
     </div>
-    <div className="resturant-gocta" role="button" onClick={handleClick}>
+    <div className="resturant-gocta" role="button" onClick={()=>handleClick(data._id)}>
       Menu
     </div>
     
